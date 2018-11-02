@@ -14,7 +14,7 @@
 		de type Contact.
 		Un constructeur est juste une fonction
 		**/
-		public function __construct($n, $t)
+		public function __construct(string $n, int $t)
 		{
 			$this->nom = $n;
 			$this->tel = $t;
@@ -23,7 +23,7 @@
 		/**
 		ceci est une méthode ou une fonction
 		**/
-		public function afficher()
+		public function afficher(): string
 		{
 			echo '<strong>'.$this->nom.'</strong> : '.$this->tel;
 		}
@@ -31,4 +31,3 @@
 
 	$e = new Contact('Chris', '0885');
 	$e->afficher();
-?>
