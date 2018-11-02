@@ -1,6 +1,6 @@
 <?php
 
-	function moyenne($cotes)
+	function moyenne(int $cotes): float
 	{
 		$s = 0;
 		foreach($cotes as $c)
@@ -16,7 +16,7 @@
 	
 	echo "Moyenne : $m<hr/>";
 	
-	function get_telephone($nom)
+	function get_telephone(string $nom): ?int
 	{
 		$contacts = array(
 			"0973686603" => "D303L",
