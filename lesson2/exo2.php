@@ -2,7 +2,8 @@
 	
 	$commentaire = "PHP est un langage Objet";
 	$n = strlen($commentaire);
-	echo $n;
+	$n2 = mb_strlen($commentaire);
+	echo "n = {$n} et n2 = {$n2}"
 	echo "<hr/>";
 	
 	$min = strtolower($commentaire);
